@@ -1,0 +1,35 @@
+.banner{
+    margin-top: 5px;
+    width: 2052px;
+    height: 252px;
+    margin-right: 100px;
+    
+}
+.ad{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.boxStyle{
+    background-color: rgba(197, 197, 197, 0.075);
+}
+.load{
+    margin-left: 40%;
+   margin-top: 45px;
+  width: 120px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.829);
+  color: rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border: 2px solid rgb(0, 0, 0);
+}
+.load:hover{
+  background-color: rgba(0, 39, 27, 0.829);
+color: rgb(253, 253, 253);
+border: 2px solid rgba(0, 19, 10, 0.808);
+}

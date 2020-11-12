@@ -1,0 +1,136 @@
+.carouseL{
+  /* background-color: black; */
+  margin-top: 100px;
+}
+
+.carouselContainer{
+  /* margin-top: 150px; */
+  margin-bottom: 20px;
+  background-color: #ebeeef;
+  border-radius: 5px !important;
+
+  padding: 10px;
+  
+}
+.carousel__header > h6{
+  color: #002f34;
+  font-size: 28px !important;
+  font-weight: 18px;
+}
+.card > .hey{
+  width: 170px;
+  padding: 20px;
+  height: 200px;
+  margin-left: 40px;
+  align-items: center;
+}
+.card-title{
+  font-size: 1.3rem;
+  color: #002f34;
+  font-weight: 700;
+}
+.card-text{
+  color: rgb(116, 113, 113);
+  font-size: 1rem;
+}
+.card-img-top{
+  margin-left: 60px;
+  height: 150px;
+  margin-top: px;
+}
+.card-text > span{
+  /* font-size: 50px !important; */
+}
+.heartIcon{
+
+}
+.img{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.card{
+  width: 280px !important;
+}
+.mr-2{
+font-size: 20px;
+}
+.icn{
+  margin-right: 0%;
+}
+.next,.prev{
+  color: black !important;
+  background-color: transparent !important;
+  /* box-shadow: 0 2px 8px 0 rgba(0,0,0,.15); */
+  /* box-shadow: 0 10 0 20 #ccc; */
+  font-size: 2rem !important;
+  border-radius: 50% !important;
+  border: none !important;
+
+}
+.carousel__header{
+  display: flex;
+  justify-content: space-between;
+}
+.carousel__header > a{
+    bottom: 5px;
+  font-size: 19px;
+  color: #002f34;
+  font-weight: 700;
+  border-bottom:3px solid #002f34 ;
+  text-decoration: none;
+
+}
+.carousel__header > a:hover{
+  border-bottom: none;
+}
+.mainContainer__carousel{
+    margin-right: 30%;
+    margin-left: 15%;
+  width: 1320px !important;
+  padding: 30px;
+  height: 500px !important;
+}
+
+
+.ind-card div{
+  max-height: 300px;
+}
+@media only screen and (max-width: 1360px) {
+.mainContainer__carousel{
+  margin-right: 10%;
+ width: 820px !important;
+  padding: 20px;
+  height: 500px !important;
+}
+.ind-card div{
+  width: 180px;
+}
+.card{
+  width: 180px !important;
+}
+.icn{
+  margin-right: 15%;
+}
+
+}
+@media only screen and (max-width: 800px) {
+.mainContainer__carousel{
+ width: 620px !important;
+  padding: 20px;
+  height: 500px !important;
+}
+.ind-card div{
+  width: 170px;
+}
+.card{
+  width: 170px !important;
+}
+.icn{
+  margin-right: 25%;
+}
+}
+@media only screen and (max-width: 800px) {
+  .mainContainer__carousel{
+ display: none;
+}
+}

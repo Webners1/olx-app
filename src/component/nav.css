@@ -1,0 +1,136 @@
+.dropdown {
+     position: absolute;
+     display: inline-block;
+     margin-top: -2em;
+     margin-left: 20em;
+     height: 80px;
+     width: 400px;
+}
+ .box {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     top:90px;
+     left: 30px;
+     width: 330px;
+     margin-left: 10px;
+     
+     background-color: white;
+     font-weight:bold;
+     position: absolute;
+
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 2;
+}
+
+ .list a {
+     color: #000;
+     text-decoration: none;
+     z-index: 2;
+     text-align: center;
+     
+}
+.iconCity{
+    background-color: black;
+    height:20ch ;
+    
+}
+.sellBtn{
+    
+    box-shadow: 5px 3px 1px 10px black;
+}
+ .list {
+     height: 60px;
+     padding: 8px 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+     z-index: 3;
+}
+
+ .list:last-child {
+     border-bottom: none;
+}
+ .list:hover {
+     background-color: #61ffdf;
+     color: rgb(0, 0, 0);
+     z-index: 3;
+}
+.searchIcon{
+    position: absolute;
+    z-index: 1;
+    top:42px;
+    left: 38px;
+    
+}
+ .button{
+     width:230px;
+     height:30px;
+     background-color:transparent;
+     padding:12px;
+     border-radius:5px;
+     font-weight:bold;
+     color:rgb(0, 0, 0);
+     position: absolute;
+     align-items: center;
+}
+
+.input{
+    padding-left: 60px;
+    position: absolute;
+    
+border: 2.2px solid #002f34;
+border-radius: 4px;
+    width: 330px;
+    height: 6ch;
+    margin: 5px;
+    
+}
+
+.input:hover{
+
+border:3px solid rgba(0, 255, 157, 0.405);
+}
+.Dropicon{
+    
+    position: absolute;
+    right: -120px;
+    top: 35px;
+
+    align-content: center;
+    justify-content: center;
+    
+    justify-items: center;
+    align-self: center;
+    z-index: 0;
+    background-color:transparent;
+    color:#002f34;
+    border-radius: 2px;
+    size: 500%px;
+    
+}
+.Dropicon:hover{
+    transition: 1s ;
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1560px) {
+.dropdown{
+    position: absolute;
+    left: -240px;
+        width: 200px;
+
+}
+}
+@media only screen and (max-width: 1160px) {
+.dropdown{
+    width: 200px;
+
+}
+}
+@media only screen and (max-width: 600px) {
+  .dropdown,.Dropicon,.input{
+      display: none;
+  }
+}
+

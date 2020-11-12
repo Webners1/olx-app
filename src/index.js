@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {BrowserRouter as Router} from 'react-router-dom'
+import {createBrowserHistory} from 'history'
+import{createStore} from 'redux'
 
+const history = createBrowserHistory()
 ReactDOM.render(
   <React.StrictMode>
+    <Router history={history}>
+
     <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

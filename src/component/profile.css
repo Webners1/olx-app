@@ -1,0 +1,18 @@
+.profileCard{
+    position: relative;
+    z-index: -1;
+  padding: 80px;
+    background-color: rgb(0, 57, 65);
+  top: -1em;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    
+}
+.AdHead{
+    text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 10px;
+  text-decoration: underline;
+  font-weight: 700;
+}

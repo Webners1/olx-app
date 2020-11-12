@@ -1,0 +1,36 @@
+.main-footer{
+    color: rgb(65, 65, 65);
+    background-color: rgba(211, 211, 211, 0.521);
+}
+.first{
+
+    margin-left: 20%;
+}
+.col{
+    font-size: 14px;
+    color: rgba(0, 68, 53, 0.459);
+    margin-top: 10px;
+}
+.last{
+    margin-right: 20%;
+}
+.tag{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(0, 41, 43, 0.911);
+}
+.fab{
+    margin: 3px;
+    padding: 5px;
+    
+}
+.f{
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 13px;
+}
+.fab:hover{
+    color: rgb(0, 163, 122);
+     border: 2px solid black;
+    border-radius: 30000px;
+}

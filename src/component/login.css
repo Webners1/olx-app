@@ -1,0 +1,110 @@
+
+.carousel-indicators{
+    margin-top: 50px;
+    top: 8em;
+    
+    
+    
+}
+.dotBtn{
+    border-radius:100% ;
+    
+
+}
+.icn{
+    margin: 7px;
+}
+.icnscroll{
+    background-color: black;
+    
+}
+.icncor{
+    
+    color: rgba(0, 163, 128, 0.664);
+margin: 8px;
+}
+.exit{
+float: right;
+margin-bottom: 10px;
+position: relative;
+
+cursor: pointer;
+z-index: 2;
+}
+.log{
+    
+    z-index: 0;
+}
+@media only screen and (max-width: 1200px) {
+.icncor{
+
+    margin-top: 30px;
+}
+.ic{
+    margin-left: 20%;
+   
+}
+
+}
+/* .paper{
+    width:'500px';
+      height:'700px';
+    background-color: white;
+    
+    border-radius:'3px';
+    box-shadow: 0px 2px 1px 1px black;
+    padding: 2px 4px 3px;
+}
+.Login{
+    border-bottom: 3px solid black;
+color: black;
+font-weight: 30px;
+margin: 20px;
+margin-left: 50px;
+}
+.Login:hover {
+    border: 0px;
+    color: black;
+}
+.button{
+    
+      border:2px solid  #002f34;
+      margin-left: 6%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #002f34;
+      font-weight:800;
+      margin:7px;
+width:368px;
+height:48px;
+
+}
+    .button:hover{
+        border:'6px solid  #002f34';} 
+.corousel{
+     margin-bottom:1800px;
+width:350px;
+height:100px;
+margin-bottom:100px;
+}
+.corouselText{
+    color:rgb(92, 92, 92);
+      font-weight:400;
+      font-size:21px;
+      width:368px;
+      height:50px;
+      margin-left:30%;
+      margin-top:20px;
+margin:2px;
+margin-block-end:10px;
+}
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corouselItem{
+    width:150px;
+height:300px;
+
+margin-top:20px;
+} */
