@@ -1,14 +1,10 @@
 import React ,{Component,useState}from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './component/Navbar'
 import Dropdown from './component/Navbar1'
 import MenuBar from './component(menuBar)/menuBar'
-import intro from './images/intro.jpg'
-import ad from './images/ad.jpg'
-import Box from './BOX/Box';
-import CardCarousel from './BOX/Slider'
-import Data from './BOX/data'
+
 import {Adpage} from './CreatingAd/CreatingAd'
 import Footer from './component/footer'
 import {Login} from './component/Login'
@@ -17,7 +13,7 @@ import banner from './images/intro.jpg'
 import {Pages} from './component/Pages'
 import {Firstframe}from './component/Frame'
 import firebase from 'firebase'
-import {firebaseConfig} from './firebase.js'
+
 import Profile from './component/profile'
 import {InfoPage} from './component/AdInfoPage'
 import {

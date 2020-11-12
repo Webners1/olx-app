@@ -4,17 +4,12 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { Avatar, Button, IconButton, Menu, MenuItem, TextField } from '@material-ui/core';
-import {Alert,Carousel } from 'bootstrap';
-import jquery from 'jquery'
+
 import './login.css'
-import { green } from '@material-ui/core/colors';
-import Radio from '@material-ui/core/Radio';
+
 import firebase from 'firebase'
 import {firebaseConfig} from '../firebase'
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
-import Input from '@material-ui/core/Input';
-import { AccountCircle } from '@material-ui/icons';
-import FacebookIcon from '@material-ui/icons/Facebook';
+
 import {
  Link,useHistory
 } from "react-router-dom";
