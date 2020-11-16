@@ -7,6 +7,7 @@
     background-color: rgb(255, 255, 255);
     text-align: center;
     box-shadow: 1px 1px 2px 2px rgba(99, 99, 99, 0.199);
+   
     
 }
 .menu-bar >ul{
@@ -20,6 +21,7 @@
     color: black;
     
 }
+
 .menu-bar ul li a{
     color: black;
 }
@@ -39,7 +41,7 @@
 
 
 .lastlist{
-    margin-right: 400px;
+    margin-right: 350px;
 }
 ul>li.dropdown{
     position: absolute;
@@ -117,4 +119,184 @@ ul.menu-area ul li a:hover{
 }
 ul.menu-area ul li a{
     font-size: 15px;
+}
+@media only screen and (max-width: 1600px) {
+  
+.lastlist{
+    margin-right: 0px;
+}
+}
+@media only screen and (max-width: 1300px) {
+  
+
+ul>li.dropdown{
+    position: relative;
+    margin-left: 1em;
+    list-style: none;
+}
+.menu-bar >ul >li{
+    width: 120px;
+    margin-top: 10px;
+    color: black;
+    
+}
+}
+@media only screen and (max-width: 1300px) {
+    ul.menu-area{
+  
+    background-color: white;
+    text-align: left;
+   
+    box-shadow: 0px 5px 10px rgb(172, 172, 172) ;
+    z-index: 1;
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+   
+    width: 950px;
+    top:-9999px;
+    list-style: none;
+     margin-left: 0em;
+    
+}
+}
+@media only screen and (max-width: 1000px) {
+  
+ul.menu-area{
+  
+    background-color: white;
+    text-align: left;
+   
+    box-shadow: 0px 5px 10px rgb(172, 172, 172) ;
+    z-index: 1;
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+   
+    width: 850px;
+    top:-9999px;
+    list-style: none;
+     margin-left: 0em;
+    
+}
+ul>li.dropdown{
+    position: relative;
+    margin-left: .5em;
+    list-style: none;
+}
+.menu-bar >ul >li{
+    width: 100px;
+    margin-top: 10px;
+    color: black;
+    
+}
+ul.menu-area ul{
+    width: 15%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(172, 172, 172);
+    
+}
+}
+@media only screen and (max-width: 800px) {
+.menu-bar >ul .Boxlist{
+    display: none;
+    
+}
+dropdown{
+    display: block;
+}
+ul.menu-area{
+  
+    background-color: white;
+    text-align: left;
+   
+    box-shadow: 0px 5px 10px rgb(172, 172, 172) ;
+    z-index: 1;
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+   
+    width: 580px;
+    top:-9999px;
+    list-style: none;
+     margin-left: -12em;
+    
+}
+}
+@media only screen and (max-width: 600px) {
+
+ul.menu-area{
+  
+    background-color: white;
+    text-align: left;
+   
+    box-shadow: 0px 5px 10px rgb(172, 172, 172) ;
+    z-index: 1;
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+   
+    width: 380px;
+    top:-9999px;
+    list-style: none;
+     margin-left: -6em;
+    
+}
+ul.menu-area ul{
+    width: 25%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: rgb(172, 172, 172);
+    
+}
+}
+@media only screen and (max-width: 400px) {
+
+ul.menu-area{
+  
+    background-color: white;
+    text-align: left;
+   
+    box-shadow: 0px 5px 10px rgb(172, 172, 172) ;
+    z-index: 1;
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+   
+    width: 330px;
+    top:-9999px;
+    list-style: none;
+     margin-left: -5em;
+    
+}
+ul.menu-area h5{
+    font-size: 13px;
+    font-weight: bolder;
+    color: rgb(0, 75, 68);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+ul.menu-area ul{
+    width: 25%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: rgb(172, 172, 172);
+    
+}
 }

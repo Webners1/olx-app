@@ -15,6 +15,8 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import './form.css'
 import { createMuiTheme } from '@material-ui/core/styles';
+import { Grid } from '@material-ui/core';
+
 import purple from '@material-ui/core/colors/purple';
 import axios from 'axios';
 import {
@@ -165,7 +167,9 @@ theme = createMuiTheme({
     return(
        
         
-        <div className='form'>
+        <Grid container direction="column">
+            <div className='form'>
+
             <img className='imgLogo'src={logo} width='130px'/>
 <div className='formBox'>
 
@@ -223,7 +227,7 @@ Description:
 </div>
 
 {this.state.Mobile?(
-<label className='label'>
+    <label className='label'>
 Category:<br/>
     <input className='category'type='radio' value='new'
      onChange={(e)=>this.handleText(e)} name='category'/>New<br/>
@@ -246,6 +250,7 @@ Category:<br/>
 <button className='submit' onClick={this.handleSubmit}>Submit</button>
 
         </div>
+</Grid>
 
        
     )

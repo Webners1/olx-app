@@ -5,12 +5,12 @@ import './frame.css'
 
 function Firstframe(){
     return(
-        <Grid container className='Main' spacing={4}>
+        <Grid container className='Main' spacing={0}>
             <Grid item lg={1}md={1}sm={false} xs={false}/>
 
             <Grid item className='imageBox'lg={3}md={3}sm={false} xs={false}>
             {/*Image*/}
-<img src="https://statics.olx.com.pk/external/base/img/phone-app.png"/>
+<img class="poster"src="https://statics.olx.com.pk/external/base/img/phone-app.png"/>
             </Grid>
             <Grid item className='textBox' lg={3}md={3}sm={false} xs={false}>
             {/*Text*/}
@@ -20,9 +20,9 @@ function Firstframe(){
             
             <Grid item className='playstore'lg={2}md={2}sm={false} xs={false}>
             {/*PlayStore*/}
-<h6>GET YOUR APP TODAY</h6>
+<h5>GET YOUR APP TODAY</h5>
 
-<img src="https://statics.olx.com.pk/external/base/img/appstore_2x.png" width='120px'style={{margin:"5px",}}/>
+<img src="https://statics.olx.com.pk/external/base/img/appstore_2x.png" width='120px'/>
 <img src="https://statics.olx.com.pk/external/base/img/playstore_2x.png" width='120px'/>
 
 

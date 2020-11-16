@@ -17,6 +17,9 @@ width: 7px;
 margin-left: -17px;
 
 }
+uppic{
+    width: 100%;
+}
 .deleteBtn{
     position: relative;
     width: 80px;
@@ -38,4 +41,9 @@ font-size: 15px;
 color: rgb(29, 29, 29);
 margin-top: 8px;
 
+}
+@media only screen and (max-width: 600px) {
+.uppic{
+    width: 100%;
+}
 }

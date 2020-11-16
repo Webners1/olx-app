@@ -4,7 +4,7 @@ import './footer.css'
 
 function Footer(){
 return(
-    <div className="main-footer">
+    <div className="main-footer" width="100%">
         <div className="container-fluid">
             <div className="row">
 <div className='col first'>
@@ -54,7 +54,7 @@ return(
 </div>
             </div>
             <hr/>
-            <div className='row' style={{color:'white',height:'50px',width:'100%',textAlign:'center',backgroundColor:'rgba(0, 41, 43, 0.911)'}}>
+            <div style={{color:'white',height:'50px',width:'100%',textAlign:'center',backgroundColor:'rgba(0, 41, 43, 0.911)'}}>
                 <div className='f col-sm'>
                     Other countries India-SouthAfrica-Indonesia
                 </div>

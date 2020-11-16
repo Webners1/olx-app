@@ -1,4 +1,4 @@
-.dropdown {
+.dropdownBox {
      position: absolute;
      display: inline-block;
      margin-top: -2em;
@@ -115,7 +115,7 @@ border:3px solid rgba(0, 255, 157, 0.405);
 }
 
 @media only screen and (max-width: 1560px) {
-.dropdown{
+.dropdownBox{
     position: absolute;
     left: -240px;
         width: 200px;
@@ -123,13 +123,12 @@ border:3px solid rgba(0, 255, 157, 0.405);
 }
 }
 @media only screen and (max-width: 1160px) {
-.dropdown{
-    width: 200px;
-
+dropdownBox{
+    width: auto;
 }
 }
 @media only screen and (max-width: 600px) {
-  .dropdown,.Dropicon,.input{
+  .dropdownBox,.Dropicon,.input{
       display: none;
   }
 }

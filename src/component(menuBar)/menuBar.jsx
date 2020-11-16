@@ -35,7 +35,9 @@ const link=(e)=>{
                 <li className='innerList dropdown'><a href='#'><b>ALL CATEGORIES</b><i className=" down fas fa-chevron-down fa-lg fa-2x"></i></a>
                 <ul className="menu-area">
                 <ul>
+                    <Link to="/car">
                     <h5>Vehicles</h5>
+</Link>
                     <li><a href="#">Tractors & Trailers</a></li>
                     <li><a href="#">Boats</a></li>
                     <li><a href="#">Other Vehicles</a></li>
@@ -92,7 +94,10 @@ const link=(e)=>{
                     
                     </ul>
                      <ul>
+                    <Link to="/mobile">
+                    
                     <h5>Mobiles</h5>
+                    </Link>
                     <li><a href="#">Mobile Phones</a></li>
                     <li><a href="#">Accessories</a></li>
                     <li><a href="#">Tablets</a></li>
@@ -112,7 +117,9 @@ const link=(e)=>{
                     <li><a href="#">Sofa & Chairs</a></li>
                     </ul>
                      <ul>
-                    <h5>Property for Rent</h5>
+                    <Link to="/house">
+
+                    <h5>Property for Rent</h5></Link>
                     <li><a href="#">Land & Plots</a></li>
                     <li><a href="#">Vacation Rentals - Guest Houses</a></li>
                     <li><a href="#">Roommates & Paying Guests</a></li>
@@ -161,13 +168,13 @@ const link=(e)=>{
 
                     </ul>
                     </li>
-                <li onClick={(e)=>link(e)}><a name='mobile' href='#'>Mobile Phones</a></li>
-                <li onClick={(e)=>link(e)}><a name='car' href='#' >Cars</a></li>
-                <li onClick={(e)=>link(e)}><a name='motorcycle' href='#'>Motorcycles</a></li>
-                <li onClick={(e)=>link(e)}><a name='house'href='#' >Houses</a></li>
-                <li onClick={(e)=>link(e)}><a name='electronics' href='#'>TV-Video-Audio</a></li>
-                <li onClick={(e)=>link(e)}><a name='tablet'href='#'>Tablets</a></li>
-                <li onClick={(e)=>link(e)} className='lastlist'><a href='#' name='land'>Land & Plots</a></li>
+                <li  className='Boxlist' onClick={(e)=>link(e)}><a name='mobile' href='#'>Mobile Phones</a></li>
+                <li className='Boxlist' onClick={(e)=>link(e)}><a name='car' href='#' >Cars</a></li>
+                <li className='Boxlist' onClick={(e)=>link(e)}><a name='motorcycle' href='#'>Motorcycles</a></li>
+                <li className='Boxlist' onClick={(e)=>link(e)}><a name='house'href='#' >Houses</a></li>
+                <li className='Boxlist' onClick={(e)=>link(e)}><a name='electronics' href='#'>TV-Video-Audio</a></li>
+                <li className='Boxlist' onClick={(e)=>link(e)}><a name='tablet'href='#'>Tablets</a></li>
+                <li onClick={(e)=>link(e)} className='lastlist Boxlist'><a href='#' name='land'>Land & Plots</a></li>
             </ul>
         </div>
         

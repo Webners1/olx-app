@@ -3,7 +3,7 @@ import firebase from 'firebase'
 import { Avatar, Button, Grid, Icon, IconButton, makeStyles, Paper, ThemeProvider, Typography } from '@material-ui/core'
 import { createMuiTheme } from '@material-ui/core/styles';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import { CircularProgress } from '@material-ui/core';
+
 
 const theme = createMuiTheme({
   palette: {

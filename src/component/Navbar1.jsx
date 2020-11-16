@@ -50,7 +50,7 @@ class Dropdown extends React.Component {
     console.log(this.state)
     return (
       
-        <div  className="dropdown" style = {{}} >
+        <div  className="dropdownBox" >
          <div className="button" onClick={this.showDropdownMenu}> <div className="btn"><div>
               <div className="searchIcon">
               <SearchIcon style={{ fontSize: 35 }}/>

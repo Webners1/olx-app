@@ -10,7 +10,7 @@ import Box from '../BOX/Box';
 import CardCarousel from '../BOX/Slider'
 import Data from '../BOX/data'
 import Adpage from '../CreatingAd/CreatingAd'
-
+import banner from '../images/intro.jpg'
 import Footer from './footer'
 import {Firstframe} from './Frame'
 
@@ -21,7 +21,7 @@ import {
 return(
       <div>
 
-    
+    <img  className='uppic'src={banner} width="100%"/>
        <img  className='ad'src={ad}/>
  <div className = "card-carousel">
          <CardCarousel/>
@@ -30,7 +30,7 @@ return(
       <div className='boxStyle'>
             
     <Box/>      </div>
-    <img className='downpic'src='https://tpc.googlesyndication.com/simgad/10440243720951453009' width='50%' height='150px' />
+    <img className='downpic'src='https://tpc.googlesyndication.com/simgad/10440243720951453009'/>
        
        
     </div>

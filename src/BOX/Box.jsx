@@ -22,9 +22,9 @@ import {
 import { useState } from 'react';
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    minWidth: 200,
+    minWidth: 100,
   },
   bullet: {
     display: 'inline-block',
@@ -52,7 +52,23 @@ color:'rgb(0, 57, 59)'
       marginTop:'3%',
       alignItems:'center',
 marginLeft:'15%',
-marginRight:'15%'
+marginRight:'15%',
+ [theme.breakpoints.down('md')]: {
+ marginLeft:'10%',
+ 
+marginRight:'10%',
+},
+[theme.breakpoints.down('sm')]: {
+ marginLeft:'10%',
+ 
+marginRight:'10%',
+},
+ [theme.breakpoints.down('xs')]: {
+ marginLeft:'10%',
+ marginRight:'5%',
+ width:'100%',
+
+}
   },
   Icon:{
       
@@ -64,7 +80,7 @@ color:'red'
 },
   
 
-});
+}));
 
 
 
@@ -241,7 +257,7 @@ let i =1
 
   return(
     
-    <Grid container spacing={3}>
+    <Grid container spacing={1}>
 {Object.keys(value).map((id,index) => {
 
 

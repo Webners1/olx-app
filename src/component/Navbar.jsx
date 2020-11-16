@@ -67,11 +67,12 @@ boxShadow:'2px 2px 2px 2px black'
    
     },
     [theme.breakpoints.down('lg')]: {
-      marginLeft:'20px'
+      marginLeft:'280px'
   },[theme.breakpoints.down('md')]: {
       marginLeft:'20px'
   }},
   Navbar:{
+    width:'100%',
 height:'65px',
 backgroundColor:'#F4F4F4'},
  menuButton: {
@@ -102,7 +103,7 @@ marginLeft:'50px',
 
 
   search: {
-    marginLeft:'15px',
+    marginLeft:'8%',
     border:'2.2px solid #002f34',
     borderRadius:'8px',
     position: 'relative',
@@ -141,7 +142,7 @@ marginLeft:'50px',
     },
    
     [theme.breakpoints.down('md')]: {
-      width: '60ch',
+      width: '30ch',
       height:'6ch',
       
       

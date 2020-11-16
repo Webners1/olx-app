@@ -22,7 +22,7 @@ import './Page.css'
 import {
  Link,useHistory
 } from "react-router-dom";
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme)=>({
   root: {
     minWidth: 200,
   },
@@ -52,7 +52,23 @@ color:'rgb(0, 57, 59)'
       marginTop:'3%',
       alignItems:'center',
 marginLeft:'15%',
-marginRight:'15%'
+marginRight:'15%',
+[theme.breakpoints.down('md')]: {
+ marginLeft:'10%',
+ 
+marginRight:'10%',
+},
+[theme.breakpoints.down('sm')]: {
+ marginLeft:'10%',
+ 
+marginRight:'10%',
+},
+ [theme.breakpoints.down('xs')]: {
+ marginLeft:'3%',
+
+ width:'90%',
+
+}
   },
   Icon:{
       
@@ -64,7 +80,7 @@ color:'red'
 },
   
 
-});
+}));
 
 function CardBox(props) {
   var history = useHistory()

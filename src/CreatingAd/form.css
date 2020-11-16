@@ -146,3 +146,32 @@ border: 2px solid rgba(0, 19, 10, 0.808);
 color: rgb(0, 43, 21);
 }
 
+@media only screen and (max-width: 1000px) {
+.form{
+  width: 100%;
+  margin-left: 0%;
+}
+.description{
+  margin-left: 0%;
+   margin-top: 5px;
+  justify-content: start;
+  text-align: start;
+  width: 100%;
+  height: 100px;
+}
+.submit1{
+
+  margin-left: 20%;
+   margin-top: 45px;
+  width: 90px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.829);
+  color: rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border: 2px solid rgb(0, 0, 0);
+  
+}
+}

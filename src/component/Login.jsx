@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import { Avatar, Button, IconButton, Menu, MenuItem, TextField } from '@material-ui/core';
+import { Avatar, Button, IconButton, Menu, MenuItem, TextField, ThemeProvider } from '@material-ui/core';
+import { createMuiTheme } from '@material-ui/core/styles';
 
 import './login.css'
 
@@ -16,7 +17,17 @@ import {
 
 
 
-
+ const theme = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: 400,
+      sm: 700,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+})
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -32,13 +43,18 @@ height:'300px',
 marginTop:'20px',
 marginLeft:'5%',
 [theme.breakpoints.down('md')]: {
-  width:'250px',
+  width:'30%',
   
-  marginLeft:'25%'
+  marginLeft:'20%'
     },
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
   width:'100px',
   marginLeft:'27%',
+marginTop:'10px',
+    },
+      [theme.breakpoints.down('xs')]: {
+  width:'100px',
+  marginLeft:'10%',
 marginTop:'10px',
     },
 
@@ -56,13 +72,18 @@ backgroundColor:'#002f34'
   color:'white'
 },[theme.breakpoints.down('md')]: {
   marginTop:'19px',
-  marginLeft:'51%',
+  marginLeft:'40%',
+  width:'100px'
+ },
+  [theme.breakpoints.down('xs')]: {
+  marginTop:'10px',
+  marginLeft:'40%',
   width:'100px'
  },
  [theme.breakpoints.down('xs')]: {
   marginTop:'10px',
-  marginLeft:'40%',
-  width:'100px'
+  marginLeft:'30%',
+  width:'90px'
  },
   },
   corouselText:{
@@ -78,15 +99,23 @@ margin:'2px',
 marginBottom:'10px',
  [theme.breakpoints.down('md')]: {
    marginTop:'35px',
-  fontSize:'25px',
-  marginLeft:'65%',
-  
+  fontSize:'22px',
+  marginLeft:'20%',
+  marginRight:'30%'
     },
-  [theme.breakpoints.down('xs')]: {
+  [theme.breakpoints.down('sm')]: {
    marginTop:'10%',
   fontSize:'22px',
   marginLeft:'-84%',
   marginBottom:'5px',
+  
+    },
+    [theme.breakpoints.down('xs')]: {
+   marginTop:'5%',
+  fontSize:'18px',
+  width:'300px',
+  marginLeft:"-55%",
+  marginBottom:'1px',
   
     }, },
   corousel:{
@@ -110,10 +139,11 @@ marginBottom:'5px'
     marginLeft:'10%',
     marginTop:'10px',
 [theme.breakpoints.down('md')]: {
-  marginLeft:'30%'
+  marginLeft:'10%'
 },
 [theme.breakpoints.down('xs')]: {
-  marginLeft:'10%'
+  marginLeft:'5%',
+  marginTop:'3px'
 },
   },
   input:{
@@ -125,11 +155,17 @@ border:'3px solid #002f34',
 borderRadius:'3px',
 fontSize:'300px',
 [theme.breakpoints.down('md')]: {
-marginLeft:'35%',
-  width:'450px',
+marginLeft:'18%',
+  width:'67%',
+
+},
+[theme.breakpoints.down('sm')]: {
+marginLeft:'9%',
+  width:'80%',
 
 },
 [theme.breakpoints.down('xs')]: {
+  marginTop:'1%',
 marginLeft:'9%',
   width:'80%',
 
@@ -151,12 +187,13 @@ height:'48px',
 '&:hover':{
     border:'6px solid  #002f34',
 },
+
 [theme.breakpoints.down('md')]: {
   border:'3px solid  #002f34',
-      width:'800px',
+      width:'70%',
       marginTop:'20px',
       height:'55px',
-      marginLeft:'17%'
+      marginLeft:'15%'
     },
     [theme.breakpoints.down('sm')]: {
   border:'3px solid  #002f34',
@@ -164,6 +201,15 @@ height:'48px',
       marginTop:'2%',
       height:'55px',
       marginLeft:'9%'
+    },
+     [theme.breakpoints.down('xs')]: {
+  border:'3px solid  #002f34',
+      width:'90%',
+      marginTop:'0%',
+      height:'55px',
+      marginLeft:'5%',
+       fontWeight:'800',
+       fontSize:'12px'
     },
   },
   paper: {
@@ -176,12 +222,17 @@ height:'48px',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
     [theme.breakpoints.down('md')]: {
-      width:'100%',
-      height:'100%'
+      width:'70%',
+      height:'90%'
     },
     [theme.breakpoints.down('xs')]: {
       width:'90%',
       height:'90%'
+    },
+    [theme.breakpoints.down('xs')]: {
+      width:'70%',
+      height:'90%',
+      marginLeft:'-20%'
     },
   }, 
   Login:{
@@ -261,6 +312,7 @@ const path=()=>{
 }
 
   return (
+      
     <div>
     {Login
     ?
@@ -318,7 +370,17 @@ const path=()=>{
     function LoginModal(props){
       let[Open,SetOpen] = useState(false)
       let{open,handleClose} = props
-     
+       const theme = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: 400,
+      sm: 700,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+})
 
 
 let[Signinerror,checkSigninError] = useState('')
@@ -339,7 +401,7 @@ let [Logtrigger,setLogTrigger]= useState(false)
 
  const classes = useStyles();
 
-  
+
 
    
  const OnSignUp = ()=>{
@@ -451,6 +513,7 @@ firebase.auth().onAuthStateChanged(function(users){
   
 
       return(
+        <ThemeProvider theme={theme}>
          <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -603,7 +666,7 @@ firebase.auth().onAuthStateChanged(function(users){
           
         </Fade>
       </Modal>
-    
+        </ThemeProvider>
       )
     }  
       export {
