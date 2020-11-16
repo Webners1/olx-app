@@ -84,9 +84,9 @@ font-size: 20px;
   border-bottom: none;
 }
 .mainContainer__carousel{
-    margin-right: 30%;
+    margin-right: 10%;
     margin-left: 15%;
-  width: 1320px !important;
+  width: 1220px !important;
   padding: 30px;
   height: 500px !important;
 }
@@ -95,10 +95,11 @@ font-size: 20px;
 .ind-card div{
   max-height: 300px;
 }
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1500px) {
 .mainContainer__carousel{
   margin-right: 10%;
- width: 820px !important;
+  margin-left: 15%;
+ width: 1000px !important;
   padding: 20px;
   height: 500px !important;
 }
@@ -113,24 +114,44 @@ font-size: 20px;
 }
 
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
 .mainContainer__carousel{
- width: 620px !important;
+margin-right: 5%;
+  margin-left: 0%;
+width: 700px;
+}
+}
+@media only screen and (max-width: 1000px) {
+.mainContainer__carousel{
+    margin-right: 0%;
+  margin-left: 0%;
+width: 500px;
+}
+
+}
+@media only screen and (max-width: 980px) {
+.mainContainer__carousel{
+  margin-right: 0%;
+  margin-left: 10%;
+ width: 700px !important;
   padding: 20px;
   height: 500px !important;
 }
 .ind-card div{
-  width: 170px;
+  width: 150px;
 }
 .card{
-  width: 170px !important;
+  width: 150px !important;
 }
 .icn{
-  margin-right: 25%;
+  margin-right: 10%;
 }
+
 }
 @media only screen and (max-width: 800px) {
-  .mainContainer__carousel{
- display: none;
+.mainContainer__carousel{
+  display: none;
 }
+
 }
+

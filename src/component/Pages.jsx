@@ -237,7 +237,7 @@ setShow(show+5)
 let i =1
   return(
     
-    <Grid container spacing={3}>
+    <Grid container spacing={1}>
 {Object.keys(value).map((id,index) => {
     
 
